@@ -1,0 +1,317 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Titillium+Web:wght@300&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* home section */
+.home{
+    background: linear-gradient(rgba(0, 0, 18, 0.3), rgba(0, 0, 18, 0.3)),
+    url("https://www.ciospain.es/archivos/202207/philipp-katzenberger-iijruoerocq-unsplash-3-.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+.home .home-content{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.home .home-content header{
+    padding: 30px;
+}
+/* lateral menu */
+.home .home-content header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: rgb(87, 108, 188);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.home .home-content header nav a{
+    display: block;
+    color: rgb(246, 241, 241);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.home .home-content header .nav-bar{
+    position: fixed;
+    background-color: rgb(87, 108, 188);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.home .home-content header .nav-bar:hover{
+    box-shadow: 0 0 35px white;
+}
+.home .home-content .info{
+    padding-bottom: 130px;
+}
+.home .home-content .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.home .home-content .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.home .home-content .info .networks{
+    margin: 20px 0;
+}
+.home .home-content .info .networks a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(0, 0, 18);
+    color: rgb(246, 241, 241);
+    border: 1px solid rgb(246, 241, 241);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.home .home-content .info .networks a:hover{
+    color: rgb(246, 241, 241);
+    background-color: rgb(87, 108, 188);
+    box-shadow: 0 0 20px rgb(246, 241, 241);
+}
+.home .home-content .picture{
+    position: relative;
+}
+.home .home-content .picture img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 7px solid rgb(87, 108, 188);
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+/* General styles */
+.title-section{
+    font-family: "Caveat";
+    font-size: 1.5rem;
+}
+/* ABOUT ME SECTION */
+.aboutme{
+    background-color: rgb(230, 210, 170);
+    padding: 140px 10px 100px 10px;
+    text-align: center;
+}
+.aboutme .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 1 10px;
+}
+.aboutme .content-section h3{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.aboutme .content-section .special{
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.aboutme .content-section p{
+    max-width: 700px;
+    margin: auto;
+    color: #181717;
+    padding: 10px;
+}
+.aboutme .content-section .row{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.aboutme .content-section .row .col{
+    width: 30%;
+}
+.aboutme .content-section .row .col i{
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.aboutme .content-section .row .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/* SKILSS SECTION */
+.skills {
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://media.istockphoto.com/id/1387302862/photo/smart-cities.jpg?b=1&s=170667a&w=0&k=20&c=skzKjqHsjk_S1-WEVaLi_tuK6JD8lpI_mX7QVWsqk80=");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    justify-content: center;
+}
+.skills .content-section{
+    max-width: 900px;
+    margin: auto;
+    padding: 0 10px;
+}
+.skills .content-section h3{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.skills .content-section .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.skills .content-section .row .col{
+    width: 150px;
+    text-align: center;
+    font-size: 20px ;
+    background-color: rgb(87, 108, 188, 0.5);
+    border-radius: 15px;
+    border: 1px solid rgb(87, 108, 188);
+} 
+
+/*  RESUME SECTION */
+.resume{
+    background-color: rgb(230, 210, 170);
+    padding: 70px 0 70px 0;
+    text-align: center;
+}
+.resume .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resume .content-section h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.resume .content-section .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resume .content-section .info .col{
+    width: 45%;
+}
+.resume .content-section .info .col .title{
+    display: block;
+    color: rgba(0, 0, 18);
+    font-weight: bold;
+    border: 2px solid rgb(87, 108, 188);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+.resume .content-section .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resume .content-section .info .col table .data{
+    width: 40%;
+    border-bottom: 1px solid rgba(0, 0, 18);
+    border-color: rgb(87, 108, 188);
+    background-color: rgb(246, 241, 241, 0.3);
+    border-radius: 10px;
+    padding-left: 2px;
+}
+
+.resume .content-section .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resume .content-section .info .col table p{
+    font-size: 14px;
+}
+.resume .content-section .info .col table .description{
+    padding: 20px;
+    background-color:rgb(87, 108, 188, 0.3);
+    border-radius: 15px;
+}
+/* contact section */
+.contact-information{
+    background-color: rgba(0, 0, 18);;
+    padding: 100px 0 100px 0;
+    color:  rgb(246, 241, 241);
+    text-align: center;
+}
+.contact-information .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contact-information .content-section h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.contact-information .content-section .row{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-information .content-section .row .col{
+    margin-top: 50px;
+}
+.contact-information .content-section .row .col h2{
+    color: rgb(87, 108, 188);
+}
+/* RESPONSIVE SECTION */
+@media screen and (max-width:800px){
+    .skills .content-section .row{
+        display: block;
+    }
+    .skills .content-section .row .col {
+        width: 100%;
+        text-align: center;
+    }
+    .skills .content-section .row .col .bar-content{
+        justify-content: center;
+    }
+    .aboutme .content-section .row {
+        display: block;
+    }
+    .aboutme .content-section .row .col {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .resume .content-section .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resume .content-section .info .col .title{
+        width: 100%;
+        text-align: center;
+    }
+    .resume .content-section .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contact-information .content-section .row{
+        display: block;
+    }
+}
