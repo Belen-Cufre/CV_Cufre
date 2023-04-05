@@ -9,6 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/* @media screen and (max-width: 900px){ */
 /* home section */
 .home{
     background: linear-gradient(rgba(0, 0, 18, 0.3), rgba(0, 0, 18, 0.3)),
@@ -210,13 +211,16 @@ html{
     font-size: 25px;
 }
 .resume .content-section .info{
-    text-align: left;
+    /* text-align: left;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; */
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .resume .content-section .info .col{
-    width: 45%;
+    width: 90%;
 }
 .resume .content-section .info .col .title{
     display: block;
@@ -227,18 +231,21 @@ html{
     padding: 10px;
     text-align: center;
     font-size: 22px;
+    width: 100%;
+    margin-top: 5%;
 }
 .resume .content-section .info .col table{
     margin-top: 30px;
     border-collapse: collapse;
 }
 .resume .content-section .info .col table .data{
-    width: 40%;
+    width: 50%;
     border-bottom: 1px solid rgba(0, 0, 18);
     border-color: rgb(87, 108, 188);
     background-color: rgb(246, 241, 241, 0.3);
     border-radius: 10px;
     padding-left: 2px;
+    font-size: 15px;
 }
 
 .resume .content-section .info .col table h3{
@@ -252,6 +259,7 @@ html{
     padding: 20px;
     background-color:rgb(87, 108, 188, 0.3);
     border-radius: 15px;
+    font-size: 13px;
 }
 /* contact section */
 .contact-information{
@@ -279,32 +287,44 @@ html{
 .contact-information .content-section .row .col h2{
     color: rgb(87, 108, 188);
 }
+/* } */
+
+
 /* RESPONSIVE SECTION */
-@media screen and (max-width:800px){
+@media (max-width:901px){
     .skills .content-section .row{
         display: block;
     }
     .skills .content-section .row .col {
-        width: 100%;
+        display: flex;
+        width: 50%;
         text-align: center;
+        justify-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
     }
     .skills .content-section .row .col .bar-content{
         justify-content: center;
     }
     .aboutme .content-section .row {
-        display: block;
+        display: flex;
+        position: relative;
+    
     }
     .aboutme .content-section .row .col {
         width: 100%;
         margin: auto;
         margin-top: 20px;
+    }
+    .resume .content-section .info{
+        align-items: center;
     } 
     .resume .content-section .info .col{
         width: 90%;
         margin: auto;
     }
     .resume .content-section .info .col .title{
-        width: 100%;
+        width: auto;
         text-align: center;
     }
     .resume .content-section .info .col table{
